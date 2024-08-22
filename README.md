@@ -78,25 +78,132 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
+```
+org 100h
 
+MOV al,11h;
+MOV bl,20h;
+ADD al,bl;
+MOV [6379h],al;
+
+ret
+```
 
 
 ## Output  
- 
+
+ <img width="960" alt="ex1add" src="https://github.com/user-attachments/assets/6e095914-4af5-4b9d-8b83-9651b711f354">
+
 ## Subtraction   of 8 bit numbers  ALP 
- 
+ ```
+org 100h
+
+MOV al,20h;
+MOV bl,[8778h];
+SUB bl,al;
+MOV [8798h],bl;
+
+ret
+```
 ## Output  
+<img width="960" alt="ex1sub" src="https://github.com/user-attachments/assets/c9b823f0-7c33-40f6-a788-a26d48b64e43">
+
 ## Multiplication alp 
+```
+org 100h
+
+MOV al,13h;
+MOV bl,2h;
+MUL bl;
+MOV [6663h],al;
+
+ret
+```
  ## Output  
+<img width="960" alt="ex1mul" src="https://github.com/user-attachments/assets/1b4ed80e-7b8f-4b66-8277-f501a2ba4c52">
 
 
 ## Division alp 
+```
+org 100h
 
+MOV al,26h;
+MOV bl,[2369h];
+DIV bl;
+MOV [2399h],al;
+
+ret
+```
 ## Output  
+<img width="960" alt="ex1div" src="https://github.com/user-attachments/assets/9e1b3134-20bd-4253-945a-1ec9a09147b6">
 
+## OR Operation
+```
+org 100h
+
+MOV SI,0532H;
+MOV AX,0A32H;
+MOV BX,0B13H;
+OR AX,BX;
+
+
+ret
+```
+
+## Output
+<img width="960" alt="ex1or" src="https://github.com/user-attachments/assets/2639960d-4761-45dc-8ed3-3d9c402ab11b">
+
+## AND Operation
+```
+org 100h
+
+MOV [SI],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+AND AX,BX;
+
+
+ret
+```
+
+## Output
+<img width="960" alt="ex1and" src="https://github.com/user-attachments/assets/2a9974e3-d884-4bd8-886e-54f4a548bead">
+
+## XOR Operation
+```
+org 100h
+
+MOV [SI+2],AX;
+MOV AX,0A32H;
+MOV BX,0B13H;
+XOR AX,BX;
+
+
+ret
+```
+
+## Output
+<img width="960" alt="ex1xor" src="https://github.com/user-attachments/assets/db483f1c-ba50-46fa-8b1c-f2018dc48d81">
+
+## NOT Operation
+```
+org 100h
+              
+              
+MOV [SI+4],AX;
+MOV AX,0A32H;
+NOT AX;
+MOV [SI+6],AX;
+
+ret
+```
+
+## Output
+<img width="960" alt="ex1not" src="https://github.com/user-attachments/assets/374c54cd-d4ed-44f0-a227-cca9e396df3e">
 
 ## Result :
- 
+Thus, ALP for fundamental arithmetic and logical operations are executed successfully.
+
 
 
 
