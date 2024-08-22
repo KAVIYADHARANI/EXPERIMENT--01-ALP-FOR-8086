@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+Name : Kaviya D
+Roll no : 212223040089
+Date of experiment : 21/08/2024
 
 
 
@@ -120,7 +120,7 @@ MOV [6663h],al;
 ret
 ```
  ## Output  
-<img width="960" alt="ex1mul" src="https://github.com/user-attachments/assets/1b4ed80e-7b8f-4b66-8277-f501a2ba4c52">
+<img width="960" alt="ex1mul" src="https://github.com/user-attachments/assets/291d974f-db58-41d8-9c8e-571469e836f3">
 
 
 ## Division alp 
