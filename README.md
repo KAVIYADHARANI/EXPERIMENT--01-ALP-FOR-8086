@@ -5,7 +5,7 @@ Name : Kaviya D
 Roll no : 212223040089
 
 
-Date of experiment : 21/08/2024
+Date of experiment : 21/08/2024 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
